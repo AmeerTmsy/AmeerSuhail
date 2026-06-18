@@ -48,7 +48,7 @@ export default function MainLayout() {
 
     const handleOpenResume = () => {
         window.open(
-            "https://drive.google.com/file/d/1x08g4d9JLdu1Ozxq0SVr21qybwe3xC7l/view?usp=sharing",
+            "https://drive.google.com/file/d/1o4SVmZAUqSz8K3bs3D9iXCZjknj791s_/view?usp=sharing",
             "_blank",
             "noopener,noreferrer"
         );
