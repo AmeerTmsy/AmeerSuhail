@@ -1,34 +1,35 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaArrowRight, FaGooglePlay, FaAppStore } from "react-icons/fa";
 
-import { HiOutlineExternalLink, HiOutlineDeviceMobile } from "react-icons/hi";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { LuBuilding2 } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
 const projects = [
     {
-        title: "AI SaaS Dashboard",
-        description: "A comprehensive analytics platform for neural network performance featuring real-time inference monitoring and automated reporting modules.",
+        title: "Whatsaap Message Automation",
+        description: "Built a WhatsApp automation platform with Python, Selenium, and webdriver-manager to send automated messages and reminders through WhatsApp Web, streamlining communication and reducing manual effort.",
         image: "https://res.cloudinary.com/dhs5i1k5f/image/upload/v1779101644/Portfolio/ChatGPT_Image_May_18_2026_04_22_29_PM_xgfowg.png",
-        tags: ["React", "OpenAI API", "Tailwind"],
+        tags: ["Python", "selenium", "webdriver-manager", "WhatsApp Web"],
         large: true,
     },
     {
         title: "MERN Job Board",
         description: "A full-stack ecosystem for connecting developers with high-growth startups featuring advanced filtering.",
         image: "https://res.cloudinary.com/dhs5i1k5f/image/upload/v1779103536/Portfolio/ChatGPT_Image_May_18_2026_04_55_24_PM_ycjqhf.png",
-        tags: ["MongoDB", "Express"],
+        tags: ["MongoDB", "Express",],
         small: true,
     },
     {
         title: "Real-time Chat Engine",
-        description: "Low-latency messaging architecture with end-to-end encryption and global presence synchronization.",
+        description: "Created a real-time one-to-one messaging application using React, Socket.io, and MongoDB with secure authentication and persistent chat history, typing indicator and a few other functionalities.",
         image: "https://res.cloudinary.com/dhs5i1k5f/image/upload/v1779100833/Portfolio/ChatGPT_Image_May_18_2026_04_00_11_PM_fgdbfj.png",
-        tags: ["Socket.io", "Redis"],
+        tags: ["MongoDB", "Express", "React.js", "Node", "Clean Architecture", "Socket.io", "Chat Management"],
         medium: true,
     },
     {
-        title: "Eco-Track Mobile",
-        description: "Sustainable lifestyle tracking app with gamified rewards and supply chain transparency visualizations.",
+        title: "Civilacquire",
+        description: "It is a construction management platform that connects property owners with engineers and construction professionals, enabling end-to-end project planning, architectural design, cost estimation, and project execution through a unified digital workflow.",
         image: "https://i.pinimg.com/1200x/36/d2/c4/36d2c4b1e4d157e5301056ad00446792.jpg",
         tags: ["App Store", "Play Store"],
         mobile: true,
@@ -168,7 +169,7 @@ export default function FeaturedProjects() {
                         </div>
 
                         <div className="flex flex-1 flex-col p-8">
-                            <div className="mb-5 flex gap-3">
+                            <div className="mb-5 flex gap-3 flex-wrap">
                                 {projects[1].tags.map((tag, i) => (
                                     <span
                                         key={i}
@@ -220,7 +221,7 @@ export default function FeaturedProjects() {
                         </div>
 
                         <div className="p-8">
-                            <div className="mb-5 flex gap-3">
+                            <div className="mb-5 flex flex-wrap gap-3">
                                 {projects[2].tags.map((tag, i) => (
                                     <span
                                         key={i}
@@ -255,10 +256,7 @@ export default function FeaturedProjects() {
                         <div className="grid h-full md:grid-cols-2">
                             {/* LEFT */}
                             <div className="flex flex-col justify-center p-10">
-                                <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-[#161d3d] text-4xl text-[#c9a7ff]">
-                                    <HiOutlineDeviceMobile />
-                                </div>
-
+                               
                                 <h3 className="text-4xl font-bold tracking-tight text-[#e7e4ff]">
                                     {projects[3].title}
                                 </h3>
@@ -268,20 +266,34 @@ export default function FeaturedProjects() {
                                 </p>
 
                                 <div className="mt-8 flex flex-wrap gap-6">
-                                    <div className="flex items-center gap-2 text-[#b3b3cc]">
+                                    <a 
+                                    href="https://apps.apple.com/"
+                                    target="_blank"
+                                     className="flex items-center gap-2 text-[#b3b3cc]">
                                         <FaAppStore />
                                         <span className="font-semibold">
                                             App Store
                                         </span>
-                                    </div>
+                                    </a>
 
-                                    <div className="flex items-center gap-2 text-[#b3b3cc]">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.euphoricoders.civilacquire&pcampaignid=web_share"
+                                        target="_blank"
+                                        className="flex items-center gap-2 text-[#b3b3cc]">
                                         <FaGooglePlay />
                                         <span className="font-semibold">
                                             Play Store
                                         </span>
-                                    </div>
+                                    </a>
                                 </div>
+
+                                <div className="mt-8">
+                                    <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-[#161d3d] text-4xl text-[#c9a7ff]">
+                                        <LuBuilding2 />
+                                    </div>
+                                    <span className="text-xs font-semibold tracking-wide mt-1">Company Project</span>
+                               </div>
+
                             </div>
 
                             {/* IMAGE */}

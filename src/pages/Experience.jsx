@@ -15,31 +15,31 @@ import {
 
 const experiences = [
   {
-    year: "2023 - PRESENT",
-    title: "Senior Full Stack Architect",
+    year: "2023 Nov - PRESENT",
+    title: "MERN Full Stack Developer At Euphoricoders Pvt",
     description:
-      "Leading the migration of legacy architecture to a modern MERN stack with microservices integration and distributed cloud caching systems.",
-    tags: ["Cloud Architecture", "Redis"],
+      "Working with team on a futuristic project that reveloutize the field of construction. Connecting the one who is planning to build and the engineers who can really show the structure, sytle, cost. I worked to contribute on creating and intagrating different apis, data conllection collection, page layout structuring and UI implimentation based on the content specification.",
+    tags: ["MERN Stack", "Performance Calculation APIs", "API Intagraions", "Clean Architecture", "Socket Chat Intagration", "Component Reusability", "code Refactoring", "Authentication Based Workflows", "State Handling"],
     glow: "shadow-[0_0_30px_rgba(168,85,247,0.7)]",
     dot: "bg-violet-300",
   },
 
   {
-    year: "2022",
-    title: "Open Source Contributor",
+    year: "2024 Jul - 2025 Oct",
+    title: "MERN Stack Developer Intern At Euphoricoders Pvt",
     description:
-      "Core contributions to Node.js performance tooling and React ecosystem state management libraries. Over 1.5k stars on personal repos.",
-    tags: ["GitHub", "Node.js Core"],
+      "Built web application for tracking and managing employee attendance, tasks, meeting. And making performance calculation and statistics using currently tracked user employee data.",
+    tags: ["React.js", "Redux", "Node.js", "Express.js", "MongoDB", "react-big-calendar", "Goole event api", "Google Oauth 2.0", "Git"],
     glow: "shadow-[0_0_30px_rgba(34,211,238,0.7)]",
     dot: "bg-cyan-300",
   },
 
   {
-    year: "2020 - 2022",
-    title: "Software Engineer II",
+    year: "2024 - 2025",
+    title: "MERN Stack Developer Trainee",
     description:
-      "Engineered real-time collaboration features using Socket.io and implemented automated CI/CD pipelines across multiple enterprise projects.",
-    tags: ["Real-time Systems", "DevOps"],
+      "I have successfully completed the 8-months Full Stack Web Development (MERN) course along with a Capstone Project in the month of FEBRUARY 2025",
+    tags: ["Practical Experience", "Developer Thinking", "Problem Solving", "Project Development"],
     glow: "shadow-[0_0_30px_rgba(196,181,253,0.7)]",
     dot: "bg-violet-200",
   },
@@ -47,7 +47,7 @@ const experiences = [
 
 const testimonials = [
   {
-    quote:"A rare combination of engineering precision and design thinking. The interfaces felt immersive, intuitive, and visually refined across every interaction.",
+    quote: "A rare combination of engineering precision and design thinking. The interfaces felt immersive, intuitive, and visually refined across every interaction.",
     name: "Jishnu Menon",
     role: "UI/UX Engineer, Freelancer",
     image:
@@ -103,8 +103,7 @@ export default function Experience() {
             {experiences.map((item, index) => (
               <div
                 key={index}
-                className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } items-start justify-between`}
+                className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} items-start justify-between`}
               >
                 {/* CARD */}
                 <motion.div
@@ -125,7 +124,7 @@ export default function Experience() {
                       {item.description}
                     </p>
                     <div className="flex flex-wrap gap-3">
-                      {item.tags.map((tag) => (
+                      {item.tags.length > 0 && item.tags.map((tag) => (
                         <span
                           key={tag}
                           className="rounded-full border border-white/5 bg-white/[0.05] px-4 py-2 text-sm text-zinc-300"
@@ -154,7 +153,7 @@ export default function Experience() {
             “I wasn’t someone who got into tech suddenly — it has always been part of my personality. I naturally gravitated toward computers, digital tools, and solving technical problems.”
           </p>
         </div>
-        </section>
+      </section>
       <section className="relative overflow-hidden border-t border-white/5 bg-[#040611] pb-28 pt-20">
         <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[150px]" />
 
@@ -201,7 +200,7 @@ export default function Experience() {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="h-16 w-16 rounded-full border border-violet-400/20 object-cover"
+                      className="h-16 w-16 rounded-full border border-violet-400/20 object-cover object-top"
                     />
 
                     <div>
@@ -230,26 +229,29 @@ export default function Experience() {
               architectural consulting roles.
             </p>
 
-            <form className="mt-14 space-y-6">
+            <form  action="https://formsubmit.co/tmsyameer@gmail.com" method="POST" className="mt-14 space-y-6">
               <input
                 type="text"
+                name="Name"
                 placeholder="Full Name"
                 className="w-full rounded-2xl border border-white/5 bg-white/[0.03] px-6 py-5 text-lg text-white outline-none transition-all placeholder:text-zinc-500 focus:border-cyan-400"
               />
 
               <input
                 type="email"
+                name="Email"
                 placeholder="Email Address"
                 className="w-full rounded-2xl border border-white/5 bg-white/[0.03] px-6 py-5 text-lg text-white outline-none transition-all placeholder:text-zinc-500 focus:border-cyan-400"
               />
 
               <textarea
                 rows="6"
+                name="Message"
                 placeholder="Tell me about your project"
                 className="w-full resize-none rounded-2xl border border-white/5 bg-white/[0.03] px-6 py-5 text-lg text-white outline-none transition-all placeholder:text-zinc-500 focus:border-cyan-400"
               />
 
-              <button className="flex w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-violet-500 to-blue-500 py-5 text-xl font-semibold transition-all hover:scale-[1.01] hover:shadow-[0_0_35px_rgba(168,85,247,0.45)]">
+              <button type="submit" className="flex w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-violet-500 to-blue-500 py-5 text-xl font-semibold transition-all hover:scale-[1.01] hover:shadow-[0_0_35px_rgba(168,85,247,0.45)]">
                 Send Transmission
                 <FiSend />
               </button>
@@ -274,7 +276,7 @@ export default function Experience() {
                     </span>
 
                     <p className="mt-1 text-2xl font-semibold text-white">
-                      Available for new projects
+                      Open to collaborate
                     </p>
                   </div>
                 </div>
@@ -291,11 +293,13 @@ export default function Experience() {
                     {
                       name: "Github",
                       icon: <FiGithub />,
+                      link: 'https://github.com/AmeerTmsy'
                     },
 
                     {
                       name: "LinkedIn",
                       icon: <FiLinkedin />,
+                      link: 'https://www.linkedin.com/in/ameer-suhali-kk-2aa11723b/'
                     },
 
                     // {
@@ -305,7 +309,9 @@ export default function Experience() {
                   ].map((social) => (
                     <a
                       key={social.name}
-                      href="#"
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group flex items-center justify-between rounded-2xl border border-white/10 bg-[rgba(10,15,35,0.72)] px-6 py-5 transition-all hover:border-violet-400 hover:bg-white/[0.03]"
                     >
                       <div className="flex items-center gap-5">

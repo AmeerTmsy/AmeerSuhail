@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 const floatingAnimation = {
     animate: {
-        y: [0, -10, 0],
+        y: [0, -40, 0],
         transition: {
             duration: 4,
             repeat: Infinity,
@@ -60,7 +60,7 @@ const techBadgesRight = [
 export default function Home() {
     const navigate = useNavigate()
     return (
-        <div className="min-h-screen overflow-hidden bg-[#050816] text-white">
+        <div className="min-h-[81vh] my-auto overflow-hidden flex flex-col">
             {/* Background */}
             <div className="pointer-events-none fixed inset-0 z-0">
                 {/* Grid */}
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             {/* Hero Section */}
-            <main className="relative z-10 flex min-h-screen items-center justify-center px-6 pb-20 pt-40 md:px-16">
+            <main className="relative z-10 flex flex-1 items-center justify-center px-6 md:px-16">
                 <div className="relative mx-auto flex max-w-7xl flex-col items-center text-center">
                     {/* Availability Badge */}
                     <motion.div
@@ -107,7 +107,7 @@ export default function Home() {
                         className="mb-5"
                     >
                         <p className="mb-4 text-sm uppercase tracking-[0.3em] text-violet-300">
-                            Hello, I’m Ameer Suhail
+                            Hello, I’m <span className="font-semibold text-violet-200">Ameer Suhail</span>
                         </p>
 
                         <div className="flex flex-wrap items-center justify-center gap-3">
@@ -232,7 +232,7 @@ export default function Home() {
                     </motion.div>
 
                     {/* Scroll Indicator */}
-                    <motion.div
+                    {/* <motion.div
                         animate={{
                             y: [0, 10, 0],
                         }}
@@ -249,28 +249,9 @@ export default function Home() {
                         <div className="flex h-10 w-6 justify-center rounded-full border border-white/10 p-1">
                             <div className="h-2 w-1 rounded-full bg-violet-300" />
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </main>
-
-            {/* Footer */}
-            {/* <footer className="relative z-10 border-t border-white/10 bg-black/20 backdrop-blur-xl">
-                <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-10 md:flex-row md:px-16">
-                    <h2 className="bg-gradient-to-r from-violet-300 to-blue-300 bg-clip-text text-2xl font-black text-transparent">
-                        MERN Architect
-                    </h2>
-
-                    <p className="text-center text-zinc-500">
-                        © 2026 Digital Craftsmanship. Built with MERN Stack.
-                    </p>
-
-                    <div className="flex items-center gap-6 text-2xl text-zinc-400">
-                        <FaGithub className="cursor-pointer transition hover:text-violet-300" />
-                        <FaLinkedin className="cursor-pointer transition hover:text-violet-300" />
-                        <FaTwitter className="cursor-pointer transition hover:text-violet-300" />
-                    </div>
-                </div>
-            </footer> */}
         </div>
     );
 }

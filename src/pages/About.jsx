@@ -30,15 +30,15 @@ const stats = [
 
   {
     icon: <HiRocketLaunch />,
-    value: "99%",
-    title: "Success Rate",
+    value: "7+",
+    title: "Projects Worked On",
     color: "text-[#2fe0ff]",
   },
 
   {
     icon: <LuBuilding2 />,
     value: "Company",
-    title: "Global Clients",
+    title: "Euphoricoders Pvt",
     color: "text-[#b8c7ff]",
   },
 
@@ -54,7 +54,7 @@ const skills = [
   {
     icon: <FaReact />,
     title: "React.js",
-    desc: "Building component-driven UIs with sophisticated state management and performance hooks.",
+    desc: "Building component-driven, Reusable, Responsive UIs with sophisticated state management and performance hooks.",
     level: "95%",
     badge: "Expert",
     progress: "95%",
@@ -74,7 +74,8 @@ const skills = [
   {
     icon: <DiNodejsSmall />,
     title: "Node.js",
-    desc: "Architecting secure, event-driven RESTful APIs and real-time microservices architectures.",
+    // desc: "Architecting secure, event-driven RESTful APIs and real-time microservices architectures.",
+    desc: "Architecting secure, event-driven RESTful APIs.",
     level: "88%",
     badge: "Senior",
     progress: "88%",
@@ -208,7 +209,7 @@ export default function About() {
                 craftsmanship." Every line of code is written with
                 intent, ensuring that the final product is as elegant
                 under the hood as it is on the surface. From complex
-                MongoDB schemas to reactive Next.js interfaces, I
+                MongoDB schemas to responsive React.js interfaces, I
                 deliver solutions that scale.
               </p>
             </div>
@@ -227,7 +228,7 @@ export default function About() {
         <div className="mx-auto mb-24 max-w-3xl text-center">
           <h2 className="feat-font text-5xl font-black tracking-tight text-[#e7e4ff]">Technological Arsenal</h2>
           <p className="mx-auto mt-8 max-w-2xl text-[1.1rem] leading-[1.8] text-[#b3b3cc]">
-            A specialized toolkit refined through years of
+            A specialized toolkit refined through a year of
             intensive full-stack development and architectural
             design.
           </p>
@@ -303,13 +304,13 @@ export default function About() {
       </div>
 
       {/* ================= IMAGE SECTION ================= */}
-      <div className="mx-auto max-w-7xl px-6 pb-28 md:px-10">
+      <div className="mx-auto max-w-7xl p-2 bg-blue-950 rounded-[2.8rem] mb-10">
         <div className="overflow-hidden rounded-[40px] border border-white/10 bg-[#070f2a]/70 p-1 backdrop-blur-xl">
           <div className="overflow-hidden rounded-[32px]">
             <img
-              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2070&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dhs5i1k5f/image/upload/v1781764663/my%20folder/ChatGPT_Image_Jun_18_2026_12_07_08_PM_qf4kqo.png"
               alt="workspace"
-              className="h-[520px] w-full object-cover opacity-60 transition duration-700 hover:scale-105 hover:opacity-100"
+              className="h-[520px] w-full object-cover opacity-80 transition duration-700 hover:scale-105 hover:opacity-100"
             />
           </div>
         </div>

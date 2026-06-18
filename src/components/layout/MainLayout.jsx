@@ -46,8 +46,16 @@ export default function MainLayout() {
         setIsMenuOpen(false);
     };
 
+    const handleOpenResume = () => {
+        window.open(
+            "https://drive.google.com/file/d/1x08g4d9JLdu1Ozxq0SVr21qybwe3xC7l/view?usp=sharing",
+            "_blank",
+            "noopener,noreferrer"
+        );
+    };
+
     return (
-        <div className="relative min-h-screen overflow-hidden bg-[#050816] text-white">
+        <div className="relative min-h-screen overflow-hidden bg-[#050816] text-white flex flex-col">
             <ScrollToHash />
             {/* BACKGROUND GLOWS */}
             <div className="pointer-events-none absolute left-[-10%] top-0 h-[500px] w-[500px] rounded-full bg-violet-500/10 blur-[140px]" />
@@ -88,7 +96,7 @@ export default function MainLayout() {
                         </div>
 
                         {/* CTA */}
-                        <button className="rounded-full bg-gradient-to-r from-violet-500 to-blue-500 px-5 py-2 text-sm font-semibold transition hover:scale-95 active:scale-90">
+                        <button onClick={handleOpenResume} className="rounded-full bg-gradient-to-r from-violet-500 to-blue-500 px-5 py-2 text-sm font-semibold transition hover:scale-95 active:scale-90">
                             Resume
                         </button>
                     </nav>
@@ -157,7 +165,7 @@ export default function MainLayout() {
 
                             {/* RESUME BUTTON */}
                             <div className="relative z-10 mt-24">
-                                <button className="w-full rounded-[2rem] bg-gradient-to-r from-violet-500 to-blue-500 px-6 py-3 text-xl font-semibold text-white shadow-[0_0_40px_rgba(139,92,246,0.35)] transition active:scale-95">
+                                <button onClick={handleOpenResume} className="w-full rounded-[2rem] bg-gradient-to-r from-violet-500 to-blue-500 px-6 py-3 text-xl font-semibold text-white shadow-[0_0_40px_rgba(139,92,246,0.35)] transition active:scale-95">
                                     Resume
                                 </button>
                             </div>
@@ -174,7 +182,7 @@ export default function MainLayout() {
             </>
 
             {/* ================= MAIN CONTENT ================= */}
-            <main className="relative z-10 min-h-screen pt-20">
+            <main className="relative z-10 flex-1 pt-20">
                 <Outlet />
             </main>
 
