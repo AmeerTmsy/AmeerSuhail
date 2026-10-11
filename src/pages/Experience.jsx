@@ -15,7 +15,16 @@ import {
 
 const experiences = [
   {
-    year: "2023 Nov - PRESENT",
+    year: "PRESENT",
+    title: "Designing and developing full stack web application as a freelancer",
+    description:
+      "Freelance Full Stack Developer & Designer, building scalable web applications solo and in collaborative teams from concept to deployment.",
+    tags: ["Designing","Developing","Collaboration", "Architecture", "API Intagraions",  "Component Reusability", "code Refactoring", "Workflows", "State Handling"],
+    glow: "shadow-[0_0_30px_rgba(168,85,247,0.7)]",
+    dot: "bg-violet-300",
+  },
+  {
+    year: "2025 Oct - 2026 July",
     title: "MERN Full Stack Developer At Euphoricoders Pvt",
     description:
       "Working with team on a futuristic project that reveloutize the field of construction. Connecting the one who is planning to build and the engineers who can really show the structure, sytle, cost. I worked to contribute on creating and intagrating different apis, data conllection collection, page layout structuring and UI implimentation based on the content specification.",

@@ -23,21 +23,21 @@ import { useNavigate } from "react-router-dom";
 const stats = [
   {
     icon: <FaCode />,
-    value: "5",
+    value: "7",
     title: "Projects Built",
     color: "text-[#c9a7ff]",
   },
 
   {
     icon: <HiRocketLaunch />,
-    value: "7+",
+    value: "9+",
     title: "Projects Worked On",
     color: "text-[#2fe0ff]",
   },
 
   {
     icon: <LuBuilding2 />,
-    value: "Company",
+    value: "Companies",
     title: "Euphoricoders Pvt",
     color: "text-[#b8c7ff]",
   },
